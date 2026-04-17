@@ -615,7 +615,7 @@ ${truncatedAnswer}
     const modelPayload = {
       model: summaryModel,
       messages: messages,
-      max_tokens: 300,
+      max_tokens: 500,
       stream: false
     };
 
@@ -944,7 +944,7 @@ function getLiteModelId(modelIds) {
     .map(i => i.split('=')[0].trim())
     .filter(i => i);
   const parts = [
-    'nemotron',
+    'or/deepseek-v',
     'deepseek-v',
     'qwen3-next',
     '-oss-',
